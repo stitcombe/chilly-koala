@@ -1,12 +1,13 @@
-import { Helmet } from "react-helmet";
+import React from 'react';
+import { Helmet } from 'react-helmet';
 
-const APP_NAME = "vite-react-chakra-starter";
+const APP_NAME = 'colossal-fog';
 
-const Meta = () => {
+function Meta() {
   return (
     <Helmet>
-      <title>Vite React Chakra Starter</title>
-      <meta name="description" content="Vite React Chakra Starter Template" />
+      <title>colossal-fog</title>
+      <meta name="description" content="colossal-fog" />
 
       <meta name="application-name" content={APP_NAME} />
       <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -20,6 +21,6 @@ const Meta = () => {
       <link rel="manifest" href="/manifest.json" />
     </Helmet>
   );
-};
+}
 
 export default Meta;

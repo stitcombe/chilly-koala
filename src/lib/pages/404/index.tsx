@@ -1,3 +1,4 @@
+import React from 'react';
 import {
   Box,
   Button,
@@ -6,13 +7,13 @@ import {
   Image,
   Link,
   Text,
-} from "@chakra-ui/react";
-import { useNavigate } from "react-router-dom";
+} from '@chakra-ui/react';
+import { useNavigate } from 'react-router-dom';
 
-const Page404 = () => {
+function Page404() {
   const navigate = useNavigate();
 
-  const handleBackToHome = () => navigate("/");
+  const handleBackToHome = () => navigate('/');
 
   return (
     <Grid gap={4} textAlign="center">
@@ -31,6 +32,6 @@ const Page404 = () => {
       </Box>
     </Grid>
   );
-};
+}
 
 export default Page404;

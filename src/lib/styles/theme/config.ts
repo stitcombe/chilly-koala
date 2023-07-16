@@ -1,5 +1,7 @@
-import type { ThemeConfig } from "@chakra-ui/react";
+import type { ThemeConfig } from '@chakra-ui/react';
 
-export const config: ThemeConfig = {
+const config: ThemeConfig = {
   disableTransitionOnChange: false,
 };
+
+export default config;

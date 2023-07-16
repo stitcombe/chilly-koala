@@ -1,6 +1,7 @@
-import { Flex, Link, Text } from "@chakra-ui/react";
+import React from 'react';
+import { Flex, Link, Text } from '@chakra-ui/react';
 
-const Footer = () => {
+function Footer() {
   return (
     <Flex
       as="footer"
@@ -10,13 +11,13 @@ const Footer = () => {
       justifyContent="center"
     >
       <Text fontSize="xs">
-        {new Date().getFullYear()} -{" "}
+        {new Date().getFullYear()} -{' '}
         <Link href="https://sznm.dev" isExternal>
           sznm.dev
         </Link>
       </Text>
     </Flex>
   );
-};
+}
 
 export default Footer;
