@@ -4,13 +4,16 @@ dist
 dist-ssr
 *.local
 
+# lock files
+package-lock.json
+yarn.lock
+
+# error logs
 yarn-error.log*
 .pnpm-debug.log*
 
-# TS
+# ts
 *.tsbuildinfo
 
-# Turbo
+# turbo
 .turbo
-
-.vscode/settings.json
