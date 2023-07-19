@@ -1,23 +1,7 @@
 import React from 'react';
-import { Flex, Link, Text } from '@chakra-ui/react';
+import LegalFooter from 'lib/components/footer/LegalFooter';
+import Contribute from 'lib/components/footer/Contribute';
 
-function Footer() {
-  return (
-    <Flex
-      as="footer"
-      width="full"
-      align="center"
-      alignSelf="flex-end"
-      justifyContent="center"
-    >
-      <Text fontSize="xs">
-        {new Date().getFullYear()} -{' '}
-        <Link href="https://sznm.dev" isExternal>
-          sznm.dev
-        </Link>
-      </Text>
-    </Flex>
-  );
+export default function Footer() {
+  return <Contribute />;
 }
-
-export default Footer;
