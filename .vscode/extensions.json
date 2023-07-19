@@ -4,6 +4,8 @@
     "dsznajder.es7-react-js-snippets",
     "mhutchie.git-graph",
     "esbenp.prettier-vscode",
-    "VisualStudioExptTeam.vscodeintellicode"
+    "visualstudioexptteam.vscodeintellicode",
+    "pflannery.vscode-versionlens",
+    "eamodio.gitlens"
   ]
 }
