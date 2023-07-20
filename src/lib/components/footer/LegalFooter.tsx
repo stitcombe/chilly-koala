@@ -1,11 +1,11 @@
 import React from 'react';
-import { Container, HStack, Heading, Link, Text } from '@chakra-ui/react';
+import { Box, HStack, Heading, Link, Text } from '@chakra-ui/react';
 
 export default function LegalFooter(): JSX.Element {
   const year = new Date().getFullYear();
   return (
-    <Container>
-      <Heading as="h2" size="sm" mb={2}>
+    <Box>
+      <Heading as="h2" size="sm" mb={2} mt={4}>
         Legal
       </Heading>
       <HStack spacing={4}>
@@ -14,6 +14,6 @@ export default function LegalFooter(): JSX.Element {
         <Link href="#b">Pricing</Link>
         <Link href="#c">Status</Link>
       </HStack>
-    </Container>
+    </Box>
   );
 }
