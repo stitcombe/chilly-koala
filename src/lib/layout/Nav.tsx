@@ -290,22 +290,22 @@ export default function WithSubnavigation() {
           <Menu>
             <MenuButton
               as={Button}
-              rounded={'full'}
-              variant={'link'}
-              cursor={'pointer'}
+              rounded="full"
+              variant="link"
+              cursor="pointer"
               minW={0}
             >
               <Avatar
-                size={'sm'}
-                src={'https://avatars.dicebear.com/api/male/username.svg'}
+                size="sm"
+                src="https://avatars.dicebear.com/api/male/username.svg"
               />
             </MenuButton>
-            <MenuList alignItems={'center'}>
+            <MenuList alignItems="center">
               <br />
               <Center>
                 <Avatar
-                  size={'2xl'}
-                  src={'https://avatars.dicebear.com/api/male/username.svg'}
+                  size="2xl"
+                  src="https://avatars.dicebear.com/api/male/username.svg"
                 />
               </Center>
               <br />
