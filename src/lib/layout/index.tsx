@@ -19,13 +19,11 @@ function Layout({ children }: LayoutProps) {
       transition="0.5s ease-out"
     >
       <Meta />
-      {/* <Flex wrap="wrap" margin="8" minHeight="90vh"> */}
       <WithSubnavigation />
-      <Box width="full" as="main" marginY={22}>
+      <Box width="full" as="main" marginTop="60px">
         {children}
       </Box>
       <Footer />
-      {/* </Flex> */}
     </Box>
   );
 }

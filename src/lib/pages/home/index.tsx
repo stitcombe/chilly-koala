@@ -7,7 +7,7 @@ import SomeText from './components/SomeText';
 
 function Home() {
   return (
-    <Grid gap={4}>
+    <Grid gap={1000}>
       <SomeText />
       <SomeImage />
       <CTASection />
