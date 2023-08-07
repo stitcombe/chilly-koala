@@ -29,6 +29,7 @@ import {
   ChevronRightIcon,
 } from '@chakra-ui/icons';
 import ThemeToggle from './ThemeToggle';
+import NotificationMenu from './Notification';
 
 interface NavItem {
   label: string;
@@ -286,7 +287,7 @@ export default function WithSubnavigation() {
           spacing={6}
         >
           <ThemeToggle />
-
+          <NotificationMenu />
           <Menu>
             <MenuButton
               as={Button}

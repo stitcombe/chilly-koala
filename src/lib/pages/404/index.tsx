@@ -1,37 +1,38 @@
 import React from 'react';
-import {
-  Box,
-  Button,
-  Grid,
-  Heading,
-  Image,
-  Link,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Heading, Text, Button } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 
-function Page404() {
+export default function Page404() {
   const navigate = useNavigate();
-
   const handleBackToHome = () => navigate('/');
 
   return (
-    <Grid gap={4} textAlign="center">
-      <Heading>Page not Found</Heading>
+    <Box textAlign="center" py={10} px={6}>
+      <Heading
+        display="inline-block"
+        as="h2"
+        size="2xl"
+        bgGradient="linear(to-r, teal.400, teal.600)"
+        backgroundClip="text"
+      >
+        404
+      </Heading>
+      <Text fontSize="18px" mt={3} mb={2}>
+        Page Not Found
+      </Text>
+      <Text color="gray.500" mb={6}>
+        The page you&apos;re looking for does not seem to exist
+      </Text>
 
-      <Box maxWidth={[280, 400]} marginX="auto">
-        <Image width={400} src="/assets/404 Error-rafiki.svg" />
-        <Link fontSize="xs" href="https://stories.freepik.com/web" isExternal>
-          Illustration by Freepik Stories
-        </Link>
-      </Box>
-
-      <Box>
-        <Text>It&apos;s Okay!</Text>
-        <Button onClick={handleBackToHome}>Let&apos;s Head Back</Button>
-      </Box>
-    </Grid>
+      <Button
+        colorScheme="teal"
+        bgGradient="linear(to-r, teal.400, teal.500, teal.600)"
+        color="white"
+        variant="solid"
+        onClick={handleBackToHome}
+      >
+        Go to Home
+      </Button>
+    </Box>
   );
 }
-
-export default Page404;
